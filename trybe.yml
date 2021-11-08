@@ -1,0 +1,5 @@
+ignore_files:
+  - cypress/
+  - .stylelintrc.json
+  - .eslintrc.json
+  - .editorconfig
