@@ -26,12 +26,47 @@
         class="trybewarts-header-logo"
       />
       <h1 id="trybewarts-header-title">Trybewarts</h1>
+      <section class="login-container">
+        <form class="trybewarts-login" action="" method="get">
+          <input type="text" name="email" placeholder="Email" id="inp-mail" />
+          <input
+            type="text"
+            name="password"
+            placeholder="Senha"
+            id="inp-pass"
+          />
+          <button id="btn-login">Entrar</button>
+        </form>
+      </section>
     </header>
     <main>
       <section class="container">
-        <form id="evaluation-form" action="" method="post"></form>
+        <form id="evaluation-form" action="" method="post">
+          <section>
+            <input id="input-name" type="text" placeholder="Nome" />
+            <input id="input-lastname" type="text" placeholder="Sobrenome" />
+          </section>
+          <section>
+            <input id="input-email" type="text" placeholder="Email" />
+            <label for="house">Casa: </label>
+            <select name="" id="house">
+              <option id="gitnoria-house" value="Gitnória" selected>
+                Gitnória
+              </option>
+              <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+              <option id="corvinode-house" value="Corvinode">Corvinode</option>
+              <option id="pytherina-house" value="Pytherina">Pytherina</option>
+            </select>
+          </section>
+        </form>
       </section>
-      <aside></aside>
+      <aside>
+        <img
+          id="trybewarts-forms-logo"
+          src="images/trybewarts-colored.svg"
+          alt=""
+        />
+      </aside>
     </main>
 
     <footer><p>Direitos reservados à Trybewarts©</p></footer>
