@@ -4,12 +4,17 @@
 }
 
 body {
+  font-size: 17px;
   font-family: Roboto, Segoe UI, sans-serif;
+}
+
+section {
+  margin: 10px 0;
 }
 
 .header {
   display: flex;
-  background-color: rgb(50, 167, 145);
+  background-color: rgb( 50, 167, 145 );
   justify-content: space-between;
 }
 
@@ -19,7 +24,35 @@ body {
 }
 
 .container {
+  padding: 15px 0;
   align-items: flex-start;
+}
+
+.container h2 , button , input {
+  text-align: center;
+}
+
+.comment div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-container span {
+  position: inherit;
+  align-self: flex-end;
+  color: rgb( 78, 44, 131 );
+  padding: 0 5px 5px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  font-size: 1.2rem;
 }
 
 aside {
@@ -47,29 +80,35 @@ aside {
   padding: 0 15px;
 }
 
-input,
-button {
-  text-align: center;
+button , input , .sec-two select {
   margin: 10px 5px;
   font-size: 1.2rem;
   border-radius: 7px;
   padding: 8px 10px;
+  background-color: white;
 }
 
 button {
-  background-color: RGB(78, 44, 131);
+  background-color: rgb( 78, 44, 131 );
   color: white;
+}
+
+button:disabled {
+  background-color: rgb(61, 64, 75);
+}
+
+button:active , input:active {
+  transform: scale(0.95);
 }
 
 main {
   display: flex;
   justify-content: space-evenly;
+  padding-bottom: 20px;
 }
 
 #evaluation-form {
-  display: flex;
   width: 675px;
-  flex-direction: column;
 }
 
 .c-div {
@@ -79,19 +118,21 @@ main {
   margin-top: 10px;
 }
 
-.c-left,
-.c-right {
+#evaluation-form , .c-left , .c-left div , .c-right {
   display: flex;
+  flex-direction: column;
+}
+
+.c-left , .c-right {
+  margin-bottom: 10px;
 }
 
 .c-left div {
-  display: flex;
-  flex-direction: column;
   min-width: 300px;
 }
 
 .c-right div {
-  max-width: 220px;
+  max-width: 240px;
 }
 
 #trybewarts-forms-logo {
@@ -104,7 +145,7 @@ footer {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: RGB(61, 64, 75);
+  background-color: rgb(61, 64, 75);
 }
 
 footer p {
