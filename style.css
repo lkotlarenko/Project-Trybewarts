@@ -10,10 +10,12 @@ body {
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  justify-content: space-between;
 }
 
 .trybewarts-header-logo {
   width: 120px;
+  margin: 0 15px;
 }
 
 .container {
@@ -36,6 +38,7 @@ aside {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  justify-self: flex-end;
 }
 
 .trybewarts-login {
@@ -44,10 +47,10 @@ aside {
   padding: 0 15px;
 }
 
-.trybewarts-login input,
+input,
 button {
   text-align: center;
-  margin: 0 6px;
+  margin: 10px 5px;
   font-size: 1.2rem;
   border-radius: 7px;
   padding: 8px 10px;
@@ -67,6 +70,28 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+}
+
+.c-div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.c-left,
+.c-right {
+  display: flex;
+}
+
+.c-left div {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.c-right div {
+  max-width: 220px;
 }
 
 #trybewarts-forms-logo {

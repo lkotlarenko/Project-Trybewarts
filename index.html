@@ -1,75 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trybewarts</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="shortcut icon"
-      href="images/trybewarts-favicon.png"
-      type="image/x-icon"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header class="header">
-      <img
-        src="images/trybewarts-header-logo.svg"
-        alt=""
-        class="trybewarts-header-logo"
-      />
-      <h1 id="trybewarts-header-title">Trybewarts</h1>
-      <section class="login-container">
-        <form class="trybewarts-login" action="" method="get">
-          <input type="text" name="email" placeholder="Email" id="inp-mail" />
-          <input
-            type="text"
-            name="password"
-            placeholder="Senha"
-            id="inp-pass"
-          />
-          <button id="btn-login">Entrar</button>
-        </form>
-      </section>
-    </header>
-    <main>
-      <section class="container">
-        <form id="evaluation-form" action="" method="post">
-          <section>
-            <input id="input-name" type="text" placeholder="Nome" />
-            <input id="input-lastname" type="text" placeholder="Sobrenome" />
-          </section>
-          <section>
-            <input id="input-email" type="text" placeholder="Email" />
-            <label for="house">Casa: </label>
-            <select name="" id="house">
-              <option id="gitnoria-house" value="Gitnória" selected>
-                Gitnória
-              </option>
-              <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-              <option id="corvinode-house" value="Corvinode">Corvinode</option>
-              <option id="pytherina-house" value="Pytherina">Pytherina</option>
-            </select>
-          </section>
-        </form>
-      </section>
-      <aside>
-        <img
-          id="trybewarts-forms-logo"
-          src="images/trybewarts-colored.svg"
-          alt=""
-        />
-      </aside>
-    </main>
 
-    <footer><p>Direitos reservados à Trybewarts©</p></footer>
-  </body>
-  <script src="script.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trybewarts</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="images/trybewarts-favicon.png" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo" />
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <section class="login-container">
+      <form class="trybewarts-login" action="" method="get">
+        <input type="text" name="email" placeholder="Email" id="inp-mail" />
+        <input type="text" name="password" placeholder="Senha" id="inp-pass" />
+        <button id="btn-login">Entrar</button>
+      </form>
+    </section>
+  </header>
+  <main>
+    <section class="container">
+      <form id="evaluation-form" action="" method="post">
+        <section>
+          <input id="input-name" type="text" placeholder="Nome" />
+          <input id="input-lastname" type="text" placeholder="Sobrenome" />
+        </section>
+        <section>
+          <input id="input-email" type="text" placeholder="Email" />
+          <label for="house">Casa: </label>
+          <select name="" id="house">
+            <option id="gitnoria-house" value="Gitnória" selected>Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
+          </select>
+          <hr>
+        </section>
+
+        <section class="c-div">
+          <section class="c-left">
+            <div>
+              <label id="label-family" for="family">Qual sua família?</label>
+              <label for="frontEnd"><input type="radio" id="frontEnd" name="family" value="Frontend">Família
+                Frontend</label>
+              <label for="backEnd"><input type="radio" id="backEnd" name="family" value="Backend">Família
+                Backend</label>
+              <label for="fullStack"><input type="radio" id="fullStack" name="family" value="FullStack">Família
+                FullStack</label>
+            </div>
+          </section>
+          <section class="c-right">
+            <label for="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+              <div>
+                <label for="hofs"><input id="hofs" type="checkbox" value="HoFs">HoFs</label>
+                <label for="jest"><input id="jest" type="checkbox" value="Jest">Jest</label>
+                <label for="promises"><input id="promises" type="checkbox" value="Promises">Promises</label>
+                <label for="react"><input id="react" type="checkbox" value="React">React</label>
+                <label for="sql"><input id="sql" type="checkbox" value="SQL">SQL</label>
+                <label for="python"><input id="python" type="checkbox" value="Python">Python</label>
+              </div>
+          </section>
+        </section>
+        <hr>
+        <section>
+          <label for=""><label>
+        </section>
+
+      </form>
+    </section>
+
+    <aside>
+      <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="" />
+    </aside>
+
+  </main>
+
+  <footer>
+    <p>Direitos reservados à Trybewarts©</p>
+  </footer>
+</body>
+<script src="script.js"></script>
+
 </html>
