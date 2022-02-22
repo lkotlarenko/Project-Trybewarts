@@ -1,7 +1,7 @@
 [Deploy](https://lkotlarenko.github.io/Project-Trybewarts/)
 
 # Duo-dev Project
-- Made with '[@luismonte10]'(https://github.com/luismonte10)
+- Made with *[@luismonte10](https://github.com/luismonte10)*
 
 ---
 # Skills
